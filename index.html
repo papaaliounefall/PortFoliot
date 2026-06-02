@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Papa Alioune Fall — Développeur Full Stack basé au Sénégal. JavaScript, React Native, PHP, Laravel, Python, Django, Docker.">
+    <meta name="keywords" content="développeur full stack, React Native, Laravel, Django, Docker, PHP, Python, JavaScript, REST API, Sénégal, Dakar">
+    <meta name="author" content="Papa Alioune Fall">
+    <meta property="og:title" content="Papa Alioune Fall — Développeur Full Stack">
+    <meta property="og:description" content="Développeur Full Stack basé à Dakar, Sénégal. React Native, Laravel, Django REST Framework, Docker.">
+    <meta property="og:type" content="website">
+    <title>Papa Alioune Fall — Développeur Full Stack</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barre de progression scroll -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">PAPA ALIOUNE FALL</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#portfolio">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="dot"></span>
+                        Disponible pour des projets
+                    </div>
+                    <h1 class="hero-title">
+                        Salut, je suis<br>
+                        <span class="name">Papa Alioune Fall</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="typed" id="typed-text"></span>
+                    </p>
+                    <p class="hero-desc">
+                        Développeur Full Stack basé à Dakar, Sénégal. Je conçois des applications web et mobile
+                        de bout en bout — du front-end React Native au back-end Laravel & Django, jusqu'au déploiement Docker.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="CV_Papa_Alioune_Fall.pdf" target="_blank" class="btn btn-primary">
+                            <i class="bx bx-download"></i> Télécharger CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="bx bx-send"></i> Me contacter
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/papaaliounefall" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="bx bxl-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/papa-alioune-fall-03a1b2377" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="bx bxl-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/aliounefall270" target="_blank" class="social-icon" aria-label="Twitter / X">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="mailto:papaaliounef25@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="bx bx-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-ring">
+                        <div class="avatar-inner">
+                            <img src="unnamed.png" alt="Papa Alioune Fall">
+                        </div>
+                        <div class="floating-card top-right">
+                            <i class="bx bxl-javascript" style="color:#f7df1e;font-size:1.1rem"></i>
+                            JavaScript
+                        </div>
+                        <div class="floating-card bottom-left">
+                            <i class="bx bx-code-alt" style="color:#6366f1;font-size:1.1rem"></i>
+                            Web Dev
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- À propos -->
+        <section class="about" id="about">
+            <div class="container">
+                <p class="section-label reveal">about me</p>
+                <h2 class="section-title reveal">Qui suis-<span>je ?</span></h2>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            Développeur <strong>Full Stack</strong> basé à Dakar, je conçois des applications web et mobile
+                            complètes — du front-end au back-end en passant par le déploiement. Depuis plus de 2 ans,
+                            je maîtrise un stack moderne et polyvalent.
+                        </p>
+                        <p>
+                            Côté front je travaille avec <strong>JavaScript, React Native</strong> et les standards web.
+                            Côté back je développe des APIs robustes avec <strong>Laravel (PHP)</strong> et <strong>Django (Python)</strong>,
+                            en suivant les bonnes pratiques REST. Je containerise et déploie mes projets avec <strong>Docker & Docker Compose</strong>.
+                        </p>
+                        <p>
+                            En dehors du code, je crée du contenu éducatif sur YouTube pour partager mes connaissances
+                            avec la communauté francophone africaine.
+                        </p>
+                    </div>
+                    <div class="stats-grid reveal">
+                        <div class="stat-card">
+                            <span class="number">2+</span>
+                            <span class="label">Années d'expérience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="number">10+</span>
+                            <span class="label">Projets réalisés</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="number">50+</span>
+                            <span class="label">Vidéos YouTube</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="number">100%</span>
+                            <span class="label">Investi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <p class="section-label reveal">skills</p>
+                <h2 class="section-title reveal">Mes <span>compétences</span></h2>
+                <!-- Catégories de compétences -->
+                <div class="skills-categories">
+
+                    <div class="skills-category reveal">
+                        <h3 class="category-title"><i class="bx bx-desktop"></i> Front-end</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bxl-javascript"></i></div>
+                                <h3>JavaScript</h3>
+                                <p>ES6+, DOM, Async/Await, Fetch API</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 85%"></div></div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bxl-react"></i></div>
+                                <h3>React Native</h3>
+                                <p>Apps mobile cross-platform iOS & Android</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 75%"></div></div>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bxl-html5"></i></div>
+                                <h3>HTML5 / CSS3</h3>
+                                <p>Sémantique, Flexbox, Grid, Animations</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 90%"></div></div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category reveal">
+                        <h3 class="category-title"><i class="bx bx-server"></i> Back-end</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bxl-php"></i></div>
+                                <h3>PHP / Laravel</h3>
+                                <p>MVC, Eloquent ORM, Blade, Artisan</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 80%"></div></div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bxl-python"></i></div>
+                                <h3>Python / Django</h3>
+                                <p>Django, ORM, Templates, Admin</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 75%"></div></div>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bx-transfer"></i></div>
+                                <h3>REST API</h3>
+                                <p>Django REST Framework, Laravel API, JSON</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 78%"></div></div>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category reveal">
+                        <h3 class="category-title"><i class="bx bx-cog"></i> DevOps & Outils</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bxl-docker"></i></div>
+                                <h3>Docker</h3>
+                                <p>Conteneurisation, Images, Volumes, Réseaux</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 70%"></div></div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bx-layer"></i></div>
+                                <h3>Docker Compose</h3>
+                                <p>Orchestration multi-services, déploiement</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 68%"></div></div>
+                                <span class="skill-percent">68%</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bx bxl-git"></i></div>
+                                <h3>Git / GitHub</h3>
+                                <p>Branches, PRs, CI/CD, Collaboration</p>
+                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 82%"></div></div>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <p class="section-label reveal">portfolio</p>
+                <h2 class="section-title reveal">Mes <span>projets</span></h2>
+                <div class="portfolio-grid">
+                    <div class="project-card reveal">
+                        <div class="project-thumb">
+                            <img src="Capture d'écran 2026-02-02 121119.png" alt="Site Vitrine Moderne">
+                            <div class="project-overlay">
+                                <a href="https://github.com/papaaliounefall" target="_blank" class="btn">
+                                    <i class="bx bxl-github"></i> Voir le code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Site Vitrine Moderne</h3>
+                            <p>Site web responsive avec design moderne, animations fluides et optimisé pour tous les appareils.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-thumb">
+                            <img src="opa.png" alt="Application Web Interactive">
+                            <div class="project-overlay">
+                                <a href="https://github.com/papaaliounefall" target="_blank" class="btn">
+                                    <i class="bx bxl-github"></i> Voir le code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Application Web Interactive</h3>
+                            <p>Application avec interface utilisateur intuitive, gestion d'état et fonctionnalités avancées.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-thumb">
+                            <img src=" " alt="Identité Visuelle">
+                            <div class="project-overlay">
+                                <a href="https://github.com/papaaliounefall" target="_blank" class="btn">
+                                    <i class="bx bxl-github"></i> Voir le code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Identité Visuelle</h3>
+                            <p>Création d'une identité de marque complète : logo, charte graphique, couleurs et typographie.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Illustrator</span>
+                                <span class="tech-tag">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <p class="section-label reveal">contact</p>
+                <h2 class="section-title reveal">Travaillons <span>ensemble</span></h2>
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Discutons de votre projet</h3>
+                        <p>Vous avez une idée ou un projet ? Je suis disponible et prêt à collaborer. N'hésitez pas à me contacter.</p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="bx bx-envelope"></i>
+                                <span>papaaliounef25@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bx bx-map"></i>
+                                <span>Dakar, Sénégal</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bx bxl-github"></i>
+                                <span>github.com/papaaliounefall</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Votre nom</label>
+                                <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Votre email</label>
+                                <input type="email" id="email" name="email" placeholder="jean@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" placeholder="Projet web, collaboration...">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Décrivez votre projet..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" id="submit-btn">
+                            <i class="bx bx-send"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="logo">PAF.</a>
+                <p>Développeur Full Stack · Dakar, Sénégal</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/papaaliounefall" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/papa-alioune-fall-03a1b2377" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://x.com/aliounefall270" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="mailto:papaaliounef25@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Papa Alioune Fall</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
