@@ -134,21 +134,30 @@ document.querySelectorAll('.skill-card').forEach(card => skillObserver.observe(c
 const form = document.getElementById('contact-form');
 const submitBtn = document.getElementById('submit-btn');
 
+const CONTACT_EMAIL = 'papaaliounef25@gmail.com';
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const name = form.name.value.trim();
     const email = form.email.value.trim();
+    const subject = form.subject.value.trim();
     const message = form.message.value.trim();
 
     if (!name || !email || !message) return;
 
+    const mailSubject = subject || `Contact depuis le portfolio — ${name}`;
+    const mailBody = `${message}\n\n— ${name} (${email})`;
+    const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Envoi...';
+    submitBtn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Ouverture...';
+
+    window.location.href = mailtoUrl;
 
     setTimeout(() => {
         submitBtn.classList.add('success');
-        submitBtn.innerHTML = '<i class="bx bx-check"></i> Message envoyé !';
+        submitBtn.innerHTML = '<i class="bx bx-check"></i> Client mail ouvert !';
 
         setTimeout(() => {
             submitBtn.disabled = false;
@@ -156,7 +165,7 @@ form.addEventListener('submit', (e) => {
             submitBtn.innerHTML = '<i class="bx bx-send"></i> Envoyer le message';
             form.reset();
         }, 3000);
-    }, 1200);
+    }, 600);
 });
 
 /* ─── Smooth scroll for anchor links ─────────────── */
