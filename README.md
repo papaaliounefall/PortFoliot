@@ -24,6 +24,7 @@ Portfolio/
 ├── AgriMarket.png                # Capture d'écran — AgriMarket
 ├── HadraSmart.png                # Capture d'écran — Hadra Smart
 ├── SunuMall.png                  # Capture d'écran — SunuMall
+├── PayFlex.png                   # Capture d'écran — PayFlex
 └── CV_Papa_Alioune_Fall.pdf     # CV téléchargeable
 ```
 
@@ -34,7 +35,7 @@ Portfolio/
 | **Accueil (Hero)** | Présentation avec effet machine à écrire, liens CV et contact |
 | **À propos** | Parcours, Licence (Bac+3) en Génie Logiciel, stats (3+ ans d'expérience, 10+ projets, 5+ créations graphiques, 100% investi) |
 | **Compétences** | Front-end, Back-end, DevOps & Outils, Design — détail ci-dessous |
-| **Projets** | SunuCar, Minifoot, OrientaSn, Petite Côte, Horizon Immobilier, AgriMarket, Hadra Smart, SunuMall |
+| **Projets** | SunuCar, Minifoot, OrientaSn, Petite Côte, Horizon Immobilier, AgriMarket, Hadra Smart, SunuMall, PayFlex |
 | **Contact** | Formulaire (ouvre le client mail de l'utilisateur) et informations de contact |
 
 ## Compétences présentées
@@ -77,6 +78,10 @@ Plateforme numérique au service des pèlerins et du comité d'organisation de l
 ### SunuMall
 Marketplace e-commerce avec boutique client, tableau de bord vendeur et infrastructure complète : paiements, gestion des produits, monitoring et suivi des commandes.
 `React` · `Django` · `Docker Compose` · `PostgreSQL` · `Redis` · `Celery` · `Celery Beat` · `MinIO` · `pgAdmin` · `Prometheus` · `Grafana` · `Nginx`
+
+### PayFlex
+Plateforme de gestion des ventes à crédit pour les commerçants : suivi des clients, des échéances et des paiements depuis un tableau de bord unique.
+`React` · `Django` · `Docker Compose` · `PostgreSQL` · `Redis` · `Celery` · `Celery Beat`
 
 > Ces projets sont hébergés dans des dépôts privés — le code source n'est pas public.
 
