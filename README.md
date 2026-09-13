@@ -19,16 +19,20 @@ Portfolio/
 ├── script.js                   # Scripts
 ├── favicon.ico                 # Favicon
 ├── unnamed.jpeg                 # Photo de profil
+├── Cv_Papa_Alioune_Fall.pdf     # CV téléchargeable
 ├── logos/                       # Logos des technologies (Compétences)
-├── sunucar.png                  # Capture d'écran — SunuCar
-├── minifoot.png                 # Capture d'écran — Minifoot
-├── Orientasn.png                 # Capture d'écran — OrientaSn
-├── AgriMarket.png                # Capture d'écran — AgriMarket
-├── HadraSmart.png                # Capture d'écran — Hadra Smart
-├── SunuMall.png                  # Capture d'écran — SunuMall
-├── SamayNatal.png                # Capture d'écran — Samay Natal
-├── NEJDigital.png                # Capture d'écran — NEJ Digital
-└── Cv_Papa_Alioune_Fall.pdf     # CV téléchargeable
+├── photos/                      # Archive personnelle (non utilisée sur le site)
+└── projects/                    # Captures d'écran des projets
+    ├── sunucar.png
+    ├── minifoot.png
+    ├── Orientasn.png
+    ├── restau.png
+    ├── imobilier.png
+    ├── AgriMarket.png
+    ├── HadraSmart.png
+    ├── SunuMall.png
+    ├── SamayNatal.png
+    └── NEJDigital.png
 ```
 
 ## Sections du portfolio
