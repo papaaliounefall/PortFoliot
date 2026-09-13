@@ -337,8 +337,6 @@ section { padding: 130px 0; position: relative; }
     letter-spacing: 0.1px;
 }
 
-.hero-role .sep { color: var(--muted); margin: 0 0.5rem; }
-
 .hero-desc {
     font-size: 1.02rem;
     color: var(--muted);
