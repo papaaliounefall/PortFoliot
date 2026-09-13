@@ -5,9 +5,10 @@ Portfolio personnel de **Papa Alioune Fall**, Développeur Full Stack basé à D
 ## Technologies
 
 - HTML5 sémantique
-- CSS3 (Flexbox, Grid, animations, variables CSS)
-- JavaScript vanilla (ES6+, Intersection Observer, effet machine à écrire)
-- Boxicons pour les icônes
+- CSS3 (Grid, Flexbox, variables CSS)
+- JavaScript vanilla (ES6+, Intersection Observer)
+- GSAP + ScrollTrigger (animations au scroll, curseur personnalisé, boutons magnétiques)
+- Boxicons pour les icônes de secours (les compétences et projets utilisent surtout de vrais logos)
 
 ## Structure du projet
 
@@ -18,24 +19,26 @@ Portfolio/
 ├── script.js                   # Scripts
 ├── favicon.ico                 # Favicon
 ├── unnamed.jpeg                 # Photo de profil
+├── logos/                       # Logos des technologies (Compétences)
 ├── sunucar.png                  # Capture d'écran — SunuCar
 ├── minifoot.png                 # Capture d'écran — Minifoot
 ├── Orientasn.png                 # Capture d'écran — OrientaSn
 ├── AgriMarket.png                # Capture d'écran — AgriMarket
 ├── HadraSmart.png                # Capture d'écran — Hadra Smart
 ├── SunuMall.png                  # Capture d'écran — SunuMall
-├── PayFlex.png                   # Capture d'écran — PayFlex
-└── CV_Papa_Alioune_Fall.pdf     # CV téléchargeable
+├── SamayNatal.png                # Capture d'écran — Samay Natal
+├── NEJDigital.png                # Capture d'écran — NEJ Digital
+└── Cv_Papa_Alioune_Fall.pdf     # CV téléchargeable
 ```
 
 ## Sections du portfolio
 
 | Section | Description |
 |---|---|
-| **Accueil (Hero)** | Présentation avec effet machine à écrire, liens CV et contact |
-| **À propos** | Parcours, Licence (Bac+3) en Génie Logiciel, stats (3+ ans d'expérience, 10+ projets, 5+ créations graphiques, 100% investi) |
-| **Compétences** | Front-end, Back-end, DevOps & Outils, Design — détail ci-dessous |
-| **Projets** | SunuCar, Minifoot, OrientaSn, Petite Côte, Horizon Immobilier, AgriMarket, Hadra Smart, SunuMall, PayFlex |
+| **Accueil (Hero)** | Présentation, portrait, liens CV et contact |
+| **À propos** | Parcours, Licence (Bac+3) en Génie Logiciel, stats animées (3+ ans d'expérience, 10+ projets, 5+ créations graphiques, 100% investi) |
+| **Compétences** | Front-end, Back-end, DevOps & Outils, Design — vrais logos des technologies utilisées |
+| **Projets** | SunuCar, Minifoot, OrientaSn, Petite Côte, Horizon Immobilier, AgriMarket, Hadra Smart, SunuMall, Samay Natal, NEJ Digital — liste éditoriale avec aperçu au survol |
 | **Contact** | Formulaire (ouvre le client mail de l'utilisateur) et informations de contact |
 
 ## Compétences présentées
@@ -79,9 +82,13 @@ Plateforme numérique au service des pèlerins et du comité d'organisation de l
 Marketplace e-commerce avec boutique client, tableau de bord vendeur et infrastructure complète : paiements, gestion des produits, monitoring et suivi des commandes.
 `React` · `Django` · `Docker Compose` · `PostgreSQL` · `Redis` · `Celery` · `Celery Beat` · `MinIO` · `pgAdmin` · `Prometheus` · `Grafana` · `Nginx`
 
-### PayFlex
-Plateforme de gestion des ventes à crédit pour les commerçants : suivi des clients, des échéances et des paiements depuis un tableau de bord unique.
-`React` · `Django` · `Docker Compose` · `PostgreSQL` · `Redis` · `Celery` · `Celery Beat`
+### Samay Natal
+Plateforme SaaS pour photographes événementiels : galerie professionnelle pour organiser, partager et valoriser les photos auprès des clients, sans passer par des envois compressés sur WhatsApp.
+`React` · `TypeScript` · `Vite` · `Django` · `Docker Compose` · `PostgreSQL` · `Redis` · `Celery` · `MinIO`
+
+### NEJ Digital
+Site vitrine de NEJ Digital, studio qui conçoit des produits numériques depuis l'Afrique, avec une carte du monde interactive en 3D mettant en avant ses connexions à travers le continent.
+`React` · `TypeScript` · `Vite` · `Tailwind CSS` · `Three.js` · `React Three Fiber` · `Leaflet`
 
 > Ces projets sont hébergés dans des dépôts privés — le code source n'est pas public.
 

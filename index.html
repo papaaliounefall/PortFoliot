@@ -16,19 +16,22 @@
 </head>
 <body>
 
-    <!-- Barre de progression scroll -->
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
     <div id="scroll-progress"></div>
 
     <!-- Header -->
     <header class="header" id="header">
         <nav class="navbar">
-            <a href="#home" class="logo">PAPA ALIOUNE FALL</a>
+            <a href="#home" class="logo">Papa Alioune Fall</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home" class="active">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#portfolio">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="Cv_Papa_Alioune_Fall.pdf" target="_blank" class="nav-cv">CV <i class='bx bx-right-arrow-alt'></i></a></li>
             </ul>
             <button class="burger" id="burger" aria-label="Menu">
                 <span></span>
@@ -42,62 +45,84 @@
 
         <!-- Hero -->
         <section class="hero" id="home">
-            <div class="hero-grid">
+            <div class="hero-inner">
                 <div class="hero-text">
-                    <div class="hero-badge">
+                    <p class="eyebrow reveal-line">
                         <span class="dot"></span>
-                        Disponible pour des projets
-                    </div>
+                        Disponible pour des projets - Dakar, Sénégal
+                    </p>
                     <h1 class="hero-title">
-                        Salut, je suis<br>
-                        <span class="name">Papa Alioune Fall</span>
+                        <span class="line"><span class="line-inner">Papa Alioune</span></span>
+                        <span class="line"><span class="line-inner">Fall<span class="accent-dot">.</span></span></span>
                     </h1>
-                    <p class="hero-subtitle">
-                        <span class="typed" id="typed-text"></span>
+                    <p class="hero-role reveal-line">Développeur Full Stack<span class="sep">-</span>React Native · Laravel · Django · Docker</p>
+                    <p class="hero-desc reveal-line">
+                        Je conçois des applications web et mobile de bout en bout - du front-end React Native au back-end Laravel & Django, jusqu'au déploiement Docker.
                     </p>
-                    <p class="hero-desc">
-                        Développeur Full Stack basé à Dakar, Sénégal. Je conçois des applications web et mobile
-                        de bout en bout - du front-end React Native au back-end Laravel & Django, jusqu'au déploiement Docker.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="CV_Papa_Alioune_Fall.pdf" target="_blank" class="btn btn-primary">
-                            <i class="bx bx-download"></i> Télécharger CV
+                    <div class="hero-actions reveal-line">
+                        <a href="Cv_Papa_Alioune_Fall.pdf" target="_blank" class="btn btn-primary" data-magnetic>
+                            <span>Télécharger le CV</span><i class="bx bx-download"></i>
                         </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="bx bx-send"></i> Me contacter
+                        <a href="#contact" class="btn btn-outline" data-magnetic>
+                            <span>Me contacter</span><i class="bx bx-right-arrow-alt"></i>
                         </a>
                     </div>
-                    <div class="hero-socials">
-                        <a href="https://github.com/papaaliounefall" target="_blank" class="social-icon" aria-label="GitHub">
+                    <div class="hero-socials reveal-line">
+                        <a href="https://github.com/papaaliounefall" target="_blank" aria-label="GitHub">
                             <i class="bx bxl-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/papa-alioune-fall-03a1b2377" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/papa-alioune-fall-03a1b2377" target="_blank" aria-label="LinkedIn">
                             <i class="bx bxl-linkedin"></i>
                         </a>
-                        <a href="https://x.com/aliounefall270" target="_blank" class="social-icon" aria-label="Twitter / X">
+                        <a href="https://x.com/aliounefall270" target="_blank" aria-label="Twitter / X">
                             <i class="bx bxl-twitter"></i>
                         </a>
-                        <a href="mailto:papaaliounef25@gmail.com" class="social-icon" aria-label="Email">
+                        <a href="mailto:papaaliounef25@gmail.com" aria-label="Email">
                             <i class="bx bx-envelope"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="hero-visual">
-                    <div class="avatar-ring">
-                        <div class="avatar-inner">
-                            <img src="unnamed.jpeg" alt="Papa Alioune Fall">
-                        </div>
+                    <div class="portrait">
+                        <img src="unnamed.jpeg" alt="Papa Alioune Fall">
+                        <span class="portrait-tag">Dakar, SN</span>
                     </div>
                 </div>
             </div>
+
+            <div class="scroll-cue"><span></span>Défiler</div>
         </section>
+
+        <!-- Marquee -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>React</span><span class="sep">/</span>
+                <span>React Native</span><span class="sep">/</span>
+                <span>Django</span><span class="sep">/</span>
+                <span>Laravel</span><span class="sep">/</span>
+                <span>PostgreSQL</span><span class="sep">/</span>
+                <span>Docker</span><span class="sep">/</span>
+                <span>Celery</span><span class="sep">/</span>
+                <span>REST API</span><span class="sep">/</span>
+                <span>React</span><span class="sep">/</span>
+                <span>React Native</span><span class="sep">/</span>
+                <span>Django</span><span class="sep">/</span>
+                <span>Laravel</span><span class="sep">/</span>
+                <span>PostgreSQL</span><span class="sep">/</span>
+                <span>Docker</span><span class="sep">/</span>
+                <span>Celery</span><span class="sep">/</span>
+                <span>REST API</span><span class="sep">/</span>
+            </div>
+        </div>
 
         <!-- À propos -->
         <section class="about" id="about">
             <div class="container">
-                <p class="section-label reveal">about me</p>
-                <h2 class="section-title reveal">Qui suis-<span>je ?</span></h2>
+                <div class="section-head">
+                    <span class="section-label reveal">À propos</span>
+                    <h2 class="section-title reveal">Qui suis-<em>je</em> ?</h2>
+                </div>
                 <div class="about-grid">
                     <div class="about-text reveal">
                         <p>
@@ -116,22 +141,22 @@
                             compétences en développement full stack au quotidien.
                         </p>
                     </div>
-                    <div class="stats-grid reveal">
-                        <div class="stat-card">
-                            <span class="number">3+</span>
-                            <span class="label">Années d'expérience</span>
+                    <div class="stats-strip reveal">
+                        <div class="stat">
+                            <span class="stat-number" data-count="3" data-suffix="+">0</span>
+                            <span class="stat-label">Années d'expérience</span>
                         </div>
-                        <div class="stat-card">
-                            <span class="number">10+</span>
-                            <span class="label">Projets réalisés</span>
+                        <div class="stat">
+                            <span class="stat-number" data-count="10" data-suffix="+">0</span>
+                            <span class="stat-label">Projets réalisés</span>
                         </div>
-                        <div class="stat-card">
-                            <span class="number">5+</span>
-                            <span class="label">Créations graphiques</span>
+                        <div class="stat">
+                            <span class="stat-number" data-count="5" data-suffix="+">0</span>
+                            <span class="stat-label">Créations graphiques</span>
                         </div>
-                        <div class="stat-card">
-                            <span class="number">100%</span>
-                            <span class="label">Investi</span>
+                        <div class="stat">
+                            <span class="stat-number" data-count="100" data-suffix="%">0</span>
+                            <span class="stat-label">Investi</span>
                         </div>
                     </div>
                 </div>
@@ -141,166 +166,56 @@
         <!-- Compétences -->
         <section class="skills" id="skills">
             <div class="container">
-                <p class="section-label reveal">skills</p>
-                <h2 class="section-title reveal">Mes <span>compétences</span></h2>
-                <!-- Catégories de compétences -->
-                <div class="skills-categories">
+                <div class="section-head">
+                    <span class="section-label reveal">Compétences</span>
+                    <h2 class="section-title reveal">Les outils que <em>j'utilise</em></h2>
+                </div>
+                <div class="skills-groups">
 
-                    <div class="skills-category reveal">
-                        <h3 class="category-title"><i class="bx bx-desktop"></i> Front-end</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-javascript"></i></div>
-                                <h3>JavaScript</h3>
-                                <p>ES6+, DOM, Async/Await, Fetch API</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 85%"></div></div>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-react"></i></div>
-                                <h3>React Native</h3>
-                                <p>Apps mobile cross-platform iOS & Android</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 75%"></div></div>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-html5"></i></div>
-                                <h3>HTML5 / CSS3</h3>
-                                <p>Sémantique, Flexbox, Grid, Animations</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 90%"></div></div>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-react"></i></div>
-                                <h3>React</h3>
-                                <p>Composants, Hooks, State management</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 78%"></div></div>
-                                <span class="skill-percent">78%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-typescript"></i></div>
-                                <h3>TypeScript</h3>
-                                <p>Typage statique, interfaces, générique</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 70%"></div></div>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                        </div>
+                    <div class="skills-group reveal">
+                        <h3 class="skills-group-title">Front-end</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-icon-tile"><img src="logos/javascript.png" alt=""></span>JavaScript</li>
+                            <li><span class="skill-icon-tile crop-top"><img src="logos/react.png" alt=""></span>React</li>
+                            <li><span class="skill-icon-tile crop-top"><img src="logos/react-native.png" alt=""></span>React Native</li>
+                            <li><span class="skill-icon-tile"><img src="logos/html5.png" alt=""></span>HTML5 / CSS3</li>
+                            <li><span class="skill-icon-tile"><i class="bx bxl-typescript"></i></span>TypeScript</li>
+                            <li><span class="skill-icon-tile"><img src="logos/nextjs.png" alt=""></span>Next.js</li>
+                        </ul>
                     </div>
 
-                    <div class="skills-category reveal">
-                        <h3 class="category-title"><i class="bx bx-server"></i> Back-end</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-php"></i></div>
-                                <h3>PHP / Laravel</h3>
-                                <p>MVC, Eloquent ORM, Blade, Artisan</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 80%"></div></div>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-python"></i></div>
-                                <h3>Python / Django</h3>
-                                <p>Django, ORM, Templates, Admin</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 75%"></div></div>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-transfer"></i></div>
-                                <h3>REST API</h3>
-                                <p>Django REST Framework, Laravel API, JSON</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 78%"></div></div>
-                                <span class="skill-percent">78%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-postgresql"></i></div>
-                                <h3>PostgreSQL</h3>
-                                <p>Modélisation, requêtes, indexation</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 72%"></div></div>
-                                <span class="skill-percent">72%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-data"></i></div>
-                                <h3>MySQL</h3>
-                                <p>Modélisation relationnelle, requêtes SQL</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 65%"></div></div>
-                                <span class="skill-percent">65%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-timer"></i></div>
-                                <h3>Celery</h3>
-                                <p>Tâches asynchrones, files d'attente</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 65%"></div></div>
-                                <span class="skill-percent">65%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-box"></i></div>
-                                <h3>MinIO</h3>
-                                <p>Stockage objet compatible S3</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 65%"></div></div>
-                                <span class="skill-percent">65%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-brain"></i></div>
-                                <h3>Machine Learning</h3>
-                                <p>Notions de base, modèles simples avec Python</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 40%"></div></div>
-                                <span class="skill-percent">40%</span>
-                            </div>
-                        </div>
+                    <div class="skills-group reveal">
+                        <h3 class="skills-group-title">Back-end</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-icon-tile"><i class="bx bxl-php"></i></span>PHP / Laravel</li>
+                            <li><span class="skill-icon-tile"><img src="logos/python.png" alt=""></span>Python / Django</li>
+                            <li><span class="skill-icon-tile"><i class="bx bx-transfer"></i></span>REST API</li>
+                            <li><span class="skill-icon-tile"><img src="logos/postgresql.png" alt=""></span>PostgreSQL</li>
+                            <li><span class="skill-icon-tile"><img src="logos/mysql.png" alt=""></span>MySQL</li>
+                            <li><span class="skill-icon-tile"><i class="bx bx-timer"></i></span>Celery</li>
+                            <li><span class="skill-icon-tile"><i class="bx bx-box"></i></span>MinIO</li>
+                            <li><span class="skill-icon-tile"><i class="bx bx-brain"></i></span>Machine Learning</li>
+                        </ul>
                     </div>
 
-                    <div class="skills-category reveal">
-                        <h3 class="category-title"><i class="bx bx-cog"></i> DevOps & Outils</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-docker"></i></div>
-                                <h3>Docker</h3>
-                                <p>Conteneurisation, Images, Volumes, Réseaux</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 70%"></div></div>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-layer"></i></div>
-                                <h3>Docker Compose</h3>
-                                <p>Orchestration multi-services, déploiement</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 68%"></div></div>
-                                <span class="skill-percent">68%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bxl-git"></i></div>
-                                <h3>Git / GitHub</h3>
-                                <p>Branches, PRs, CI/CD, Collaboration</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 82%"></div></div>
-                                <span class="skill-percent">82%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-table"></i></div>
-                                <h3>pgAdmin</h3>
-                                <p>Administration et supervision PostgreSQL</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 70%"></div></div>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-line-chart"></i></div>
-                                <h3>Monitoring</h3>
-                                <p>Supervision et suivi des services en production</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 65%"></div></div>
-                                <span class="skill-percent">65%</span>
-                            </div>
-                        </div>
+                    <div class="skills-group reveal">
+                        <h3 class="skills-group-title">DevOps &amp; Outils</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-icon-tile"><img src="logos/docker.jpg" alt=""></span>Docker</li>
+                            <li><span class="skill-icon-tile"><img src="logos/docker.jpg" alt=""></span>Docker Compose</li>
+                            <li><span class="skill-icon-tile"><img src="logos/git.png" alt=""></span>Git</li>
+                            <li><span class="skill-icon-tile"><img src="logos/github.png" alt=""></span>GitHub</li>
+                            <li><span class="skill-icon-tile"><img src="logos/pgadmin.png" alt=""></span>pgAdmin</li>
+                            <li><span class="skill-icon-tile"><i class="bx bx-line-chart"></i></span>Monitoring</li>
+                            <li><span class="skill-icon-tile"><img src="logos/ubuntu.png" alt=""></span>Ubuntu / Linux</li>
+                        </ul>
                     </div>
 
-                    <div class="skills-category reveal">
-                        <h3 class="category-title"><i class="bx bx-palette"></i> Design</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-icon"><i class="bx bx-palette"></i></div>
-                                <h3>Infographie</h3>
-                                <p>Identité visuelle, créations graphiques</p>
-                                <div class="skill-bar-bg"><div class="skill-bar" style="--level: 70%"></div></div>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                        </div>
+                    <div class="skills-group reveal">
+                        <h3 class="skills-group-title">Design</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-icon-tile"><img src="logos/photoshop.png" alt=""></span>Infographie</li>
+                        </ul>
                     </div>
 
                 </div>
@@ -310,78 +225,70 @@
         <!-- Projets -->
         <section class="portfolio" id="portfolio">
             <div class="container">
-                <p class="section-label reveal">portfolio</p>
-                <h2 class="section-title reveal">Mes <span>projets</span></h2>
+                <div class="section-head">
+                    <span class="section-label reveal">Portfolio</span>
+                    <h2 class="section-title reveal">Projets <em>récents</em></h2>
+                </div>
+
                 <div class="portfolio-grid">
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="sunucar.png" alt="SunuCar">                        </div>
-                        <div class="project-body">
+
+                    <article class="project-row reveal">
+                        <span class="project-row-index">01</span>
+                        <div class="project-row-main">
                             <h3>SunuCar</h3>
                             <p>Plateforme de location et gestion de flotte automobile au Sénégal : paiements Wave & Orange Money, vérification KYC, tableau de bord propriétaires/clients.</p>
                             <div class="tech-tags">
-                                <span class="tech-tag">JavaScript</span>
                                 <span class="tech-tag">React</span>
-                                <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Django</span>
                                 <span class="tech-tag">Docker Compose</span>
                                 <span class="tech-tag">PostgreSQL</span>
                                 <span class="tech-tag">Celery</span>
                                 <span class="tech-tag">MinIO</span>
-                                <span class="tech-tag">pgAdmin</span>
-                                <span class="tech-tag">Monitoring</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="sunucar.png" alt="SunuCar"></div>
+                    </article>
 
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="minifoot.png" alt="Minifoot">                        </div>
-                        <div class="project-body">
+                    <article class="project-row reveal">
+                        <span class="project-row-index">02</span>
+                        <div class="project-row-main">
                             <h3>Minifoot</h3>
                             <p>Application de réservation de terrains de mini-foot en temps réel : recherche par quartier, disponibilité live, gestion des organisations et des revenus.</p>
                             <div class="tech-tags">
-                                <span class="tech-tag">JavaScript</span>
                                 <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Django</span>
                                 <span class="tech-tag">Docker Compose</span>
                                 <span class="tech-tag">PostgreSQL</span>
                                 <span class="tech-tag">Celery</span>
                                 <span class="tech-tag">MinIO</span>
-                                <span class="tech-tag">pgAdmin</span>
-                                <span class="tech-tag">Monitoring</span>
-                                <span class="tech-tag">pgAdmin</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="minifoot.png" alt="Minifoot"></div>
+                    </article>
 
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="Orientasn.png" alt="OrientaSn">                        </div>
-                        <div class="project-body">
+                    <article class="project-row reveal">
+                        <span class="project-row-index">03</span>
+                        <div class="project-row-main">
                             <h3>OrientaSn</h3>
-                            <p>Plateforme nationale d'orientation scolaire pour les bacheliers sénégalais, avec IA et conseillers certifiés — en partenariat avec le MESRI.</p>
+                            <p>Plateforme nationale d'orientation scolaire pour les bacheliers sénégalais, avec IA et conseillers certifiés - en partenariat avec le MESRI.</p>
                             <div class="tech-tags">
-                                <span class="tech-tag">JavaScript</span>
                                 <span class="tech-tag">React</span>
-                                <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Django</span>
                                 <span class="tech-tag">Docker Compose</span>
                                 <span class="tech-tag">PostgreSQL</span>
                                 <span class="tech-tag">Celery</span>
                                 <span class="tech-tag">MinIO</span>
-                                <span class="tech-tag">pgAdmin</span>
-                                <span class="tech-tag">Monitoring</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="Orientasn.png" alt="OrientaSn"></div>
+                    </article>
 
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="restau.png" alt="Petite Côte">
-                        </div>
-                        <div class="project-body">
+                    <article class="project-row reveal">
+                        <span class="project-row-index">04</span>
+                        <div class="project-row-main">
                             <h3>Petite Côte</h3>
                             <p>Site vitrine pour un restaurant : présentation du menu, réservation en ligne et témoignages clients.</p>
                             <div class="tech-tags">
@@ -390,13 +297,13 @@
                                 <span class="tech-tag">JavaScript</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="restau.png" alt="Petite Côte"></div>
+                    </article>
 
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="imobilier.png" alt="Horizon Immobilier">
-                        </div>
-                        <div class="project-body">
+                    <article class="project-row reveal">
+                        <span class="project-row-index">05</span>
+                        <div class="project-row-main">
                             <h3>Horizon Immobilier</h3>
                             <p>Plateforme vitrine pour une agence immobilière : présentation des locations et ventes disponibles.</p>
                             <div class="tech-tags">
@@ -405,13 +312,13 @@
                                 <span class="tech-tag">JavaScript</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="imobilier.png" alt="Horizon Immobilier"></div>
+                    </article>
 
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="AgriMarket.png" alt="AgriMarket">
-                        </div>
-                        <div class="project-body">
+                    <article class="project-row reveal">
+                        <span class="project-row-index">06</span>
+                        <div class="project-row-main">
                             <h3>AgriMarket</h3>
                             <p>Marketplace agricole mettant en relation producteurs et acheteurs au Sénégal : catalogue de produits, gestion des commandes et des stocks.</p>
                             <div class="tech-tags">
@@ -421,32 +328,31 @@
                                 <span class="tech-tag">PostgreSQL</span>
                                 <span class="tech-tag">Redis</span>
                                 <span class="tech-tag">Celery</span>
-                                <span class="tech-tag">Celery Beat</span>
                                 <span class="tech-tag">MinIO</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="AgriMarket.png" alt="AgriMarket"></div>
+                    </article>
 
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="HadraSmart.png" alt="Hadra Smart">
-                        </div>
-                        <div class="project-body">
+                    <article class="project-row reveal">
+                        <span class="project-row-index">07</span>
+                        <div class="project-row-main">
                             <h3>Hadra Smart</h3>
-                            <p>Plateforme numérique au service des pèlerins et du comité d'organisation de la Hadra de Tivaouane — le système nerveux numérique de l'événement.</p>
+                            <p>Plateforme numérique au service des pèlerins et du comité d'organisation de la Hadra de Tivaouane - le système nerveux numérique de l'événement.</p>
                             <div class="tech-tags">
                                 <span class="tech-tag">React</span>
                                 <span class="tech-tag">Django</span>
                                 <span class="tech-tag">Docker Compose</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="HadraSmart.png" alt="Hadra Smart"></div>
+                    </article>
 
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="SunuMall.png" alt="SunuMall">
-                        </div>
-                        <div class="project-body">
+                    <article class="project-row reveal">
+                        <span class="project-row-index">08</span>
+                        <div class="project-row-main">
                             <h3>SunuMall</h3>
                             <p>Marketplace e-commerce avec boutique client, tableau de bord vendeur et infrastructure complète : paiements, gestion des produits, monitoring et suivi des commandes.</p>
                             <div class="tech-tags">
@@ -456,43 +362,68 @@
                                 <span class="tech-tag">PostgreSQL</span>
                                 <span class="tech-tag">Redis</span>
                                 <span class="tech-tag">Celery</span>
-                                <span class="tech-tag">Celery Beat</span>
-                                <span class="tech-tag">MinIO</span>
-                                <span class="tech-tag">pgAdmin</span>
                                 <span class="tech-tag">Prometheus</span>
                                 <span class="tech-tag">Grafana</span>
                                 <span class="tech-tag">Nginx</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="SunuMall.png" alt="SunuMall"></div>
+                    </article>
 
-                    <div class="project-card reveal">
-                        <div class="project-thumb">
-                            <img src="PayFlex.png" alt="PayFlex">
-                        </div>
-                        <div class="project-body">
-                            <h3>PayFlex</h3>
-                            <p>Plateforme de gestion des ventes à crédit pour les commerçants : suivi des clients, des échéances et des paiements depuis un tableau de bord unique.</p>
+                    <article class="project-row reveal">
+                        <span class="project-row-index">09</span>
+                        <div class="project-row-main">
+                            <h3>Samay Natal</h3>
+                            <p>Plateforme SaaS pour photographes événementiels : galerie professionnelle pour organiser, partager et valoriser les photos auprès des clients, sans passer par des envois compressés sur WhatsApp.</p>
                             <div class="tech-tags">
                                 <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Vite</span>
                                 <span class="tech-tag">Django</span>
                                 <span class="tech-tag">Docker Compose</span>
                                 <span class="tech-tag">PostgreSQL</span>
                                 <span class="tech-tag">Redis</span>
                                 <span class="tech-tag">Celery</span>
-                                <span class="tech-tag">Celery Beat</span>
+                                <span class="tech-tag">MinIO</span>
                             </div>
                         </div>
-                    </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="SamayNatal.png" alt="Samay Natal"></div>
+                    </article>
+
+                    <article class="project-row reveal">
+                        <span class="project-row-index">10</span>
+                        <div class="project-row-main">
+                            <h3>NEJ Digital</h3>
+                            <p>Site vitrine de NEJ Digital, studio qui conçoit des produits numériques depuis l'Afrique, avec une carte du monde interactive en 3D mettant en avant ses connexions à travers le continent.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Vite</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Three.js</span>
+                                <span class="tech-tag">React Three Fiber</span>
+                                <span class="tech-tag">Leaflet</span>
+                            </div>
+                        </div>
+                        <i class="bx bx-right-arrow-alt project-arrow"></i>
+                        <div class="project-row-media"><img src="NEJDigital.png" alt="NEJ Digital"></div>
+                    </article>
+
                 </div>
             </div>
+
+            <div class="project-preview" id="projectPreview"><img id="projectPreviewImg" src="" alt=""></div>
         </section>
 
         <!-- Contact -->
         <section class="contact" id="contact">
             <div class="container">
-                <p class="section-label reveal">contact</p>
-                <h2 class="section-title reveal">Travaillons <span>ensemble</span></h2>
+                <div class="section-head">
+                    <span class="section-label reveal">Contact</span>
+                    <h2 class="section-title reveal">Travaillons <em>ensemble</em></h2>
+                </div>
                 <div class="contact-grid">
                     <div class="contact-info reveal">
                         <h3>Discutons de votre projet</h3>
@@ -532,7 +463,7 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="Décrivez votre projet..." rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn-submit" id="submit-btn">
+                        <button type="submit" class="btn-submit" id="submit-btn" data-magnetic>
                             <i class="bx bx-send"></i>
                             Envoyer le message
                         </button>
@@ -555,10 +486,15 @@
                 <a href="https://x.com/aliounefall270" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="mailto:papaaliounef25@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
             </div>
+            <button class="back-to-top" id="back-to-top" aria-label="Retour en haut" data-magnetic>
+                <i class="bx bx-up-arrow-alt"></i>
+            </button>
             <p class="footer-copy">&copy; 2026 Papa Alioune Fall</p>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
